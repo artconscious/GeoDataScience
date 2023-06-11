@@ -32,10 +32,9 @@ List of resources and background information (my private favorites are set **bol
 	* **GeoJSON** [GeoJSON](https://geojson.org)
 	* SHP [What is a shapefile?—ArcMap | Documentation](https://desktop.arcgis.com/en/arcmap/latest/manage-data/shapefiles/what-is-a-shapefile.htm)
 	* Xarray [Xarray: N-D labeled arrays and datasets in Python](https://xarray.dev)
-	* [About PostGIS | PostGIS](https://postgis.net)
+	* **PostGIS** [About PostGIS | PostGIS](https://postgis.net)
 	* SAS Geo [SAS Help Center](https://documentation.sas.com/doc/de/vacdc/v_016/vaobj/n14ezqxeg2a195n1au1q980gbkte.htm)
 	* GRIB [GRIB - Wikipedia](https://en.wikipedia.org/wiki/GRIB)
-	* **PostGIS** (PostgreSQL Geo Extension) [PostGIS](http://postgis.net/)
 * Python examples with demographic data, flood risk, Post data
 	* GeoPandas
 		* contains, 
