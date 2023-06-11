@@ -1,6 +1,8 @@
 # GeoDataScience
 How to handle geo data for analytics, science, and visualization.
 
+List of resources and background informations (my private favorites are set **bold**)  
+
 * Insurance relevant Use Cases
 	* Policing: demographic data, flood risk, …
 	* Market research, penetration
@@ -15,8 +17,10 @@ How to handle geo data for analytics, science, and visualization.
 	* ETRS89 [European Terrestrial Reference System 1989](https://en.wikipedia.org/wiki/European_Terrestrial_Reference_System_1989)
 	* GPS-Epochen (2.5 cm drift the year) [Is Britain on the move?](https://www.ordnancesurvey.co.uk/blog/is-britain-on-the-move#more-21842)
 * Latitude, Longitude, Altitude, Accuracy
+	* GPS Coordinates [Latitude and Longitude](https://sciencenotes.org/latitude-and-longitude/)
 	* Degrees, Minutes, Seconds (DMS: 48° 12' 29.426" N 16° 22' 25.748" E) vs. **Decimal Degree (DD i.e. 48.208174, 16.373819)** 
-	* **Latitude, Longitude** vs. Longitude, Latitude
+	* **Latitude, Longitude** vs. Longitude, Latitude (you need to have a standard from begin on)
+	* Accouracy depends on various parameters including receiver [GNSS/GPS ACCURACY EXPLAINED](https://junipersys.com/support/article/6614)
 * Raster & Vectors
 * Used Formats:
 	* GeoJSON [GeoJSON](https://geojson.org)
