@@ -4,10 +4,10 @@ How to handle geo data for analytics, science, and visualization.
 List of resources and background informations (my private favorites are set **bold**)  
 
 * Insurance relevant Use Cases
-	* Policing: demographic data, flood risk, …
-	* Market research, penetration
-	* Risk calculation
-	* Claims handling: hail storm
+	* Policing: demographic data, flood risk, … [Towergate Underwriting starts its journey to become Geo Underwriting](https://www.ardonagh.com/media/announcements/2018/towergate-underwriting-starts-its-journey-to-become-geo-underwriting/)
+	* Market research, penetration [Insurance Geographics](https://www.casact.org/sites/default/files/2021-02/pubs_dpp_dpp97_97dpp141.pdf)
+	* Risk calculation [Geospatial risk modeling - Predictive Policing](https://urbanspatial.github.io/PublicPolicyAnalytics/geospatial-risk-modeling-predictive-policing.html)
+	* Claims handling: hail storm [Geospatial data reveals where unexpected storm risks lie](https://www.dig-in.com/opinion/geospatial-data-reveals-where-unexpected-storm-risks-lie)
 * Domain Specific Tools
 	* ArcGis: [2D, 3D & 4D GIS Mapping Software | ArcGIS Pro](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview)
 	* **QGIS**: [Welcome to the QGIS project!](https://www.qgis.org/en/site/index.html)
