@@ -46,6 +46,7 @@ List of resources and background information (my private favorites are set **bol
 	* Velocity [Velocity — ipyleaflet  documentation](https://ipyleaflet.readthedocs.io/en/latest/layers/velocity.html)
 	* …
 * Geo Services
+	* Browser map services (Google, **Bing**, OSM, Here, …)
 	* Address to Coordinates
 	* Coordinates to Address
 	* Routing
