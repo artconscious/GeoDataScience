@@ -35,7 +35,7 @@ List of resources and background information (my private favorites are set **bol
 	* **PostGIS** [About PostGIS | PostGIS](https://postgis.net)
 	* SAS Geo [SAS Help Center](https://documentation.sas.com/doc/de/vacdc/v_016/vaobj/n14ezqxeg2a195n1au1q980gbkte.htm)
 	* GRIB [GRIB - Wikipedia](https://en.wikipedia.org/wiki/GRIB)
-	* GeoPandas [GeoPandas](https://geopandas.org/en/stable/)
+	* **GeoPandas** [GeoPandas](https://geopandas.org/en/stable/)
 * Python examples with demographic data, flood risk, Post data
 * Notebooks & Maps 
 	* **Folium** (Python) [Folium Quickstart](https://python-visualization.github.io/folium/quickstart.html)
