@@ -8,10 +8,11 @@ List of resources and background information (my private favorites are set **bol
 	* Market research, penetration [Insurance Geographics](https://www.casact.org/sites/default/files/2021-02/pubs_dpp_dpp97_97dpp141.pdf)
 	* Risk calculation [Geospatial risk modeling - Predictive Policing](https://urbanspatial.github.io/PublicPolicyAnalytics/geospatial-risk-modeling-predictive-policing.html)
 	* Claims handling: hail storm [Geospatial data reveals where unexpected storm risks lie](https://www.dig-in.com/opinion/geospatial-data-reveals-where-unexpected-storm-risks-lie)
+	* …
 * Domain Specific Tools
 	* ArcGis: [2D, 3D & 4D GIS Mapping Software | ArcGIS Pro](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview)
 	* **QGIS**: [Welcome to the QGIS project!](https://www.qgis.org/en/site/index.html)
-* Projektionen: 
+* Projections: 
 	* **WGS84** [World Geodetic System](https://en.wikipedia.org/wiki/World_Geodetic_System#WGS84)
 	* Gauss-Krüger [Transform Coordinate Systems](https://gauss.svemir.co/#transform)
 	* ETRS89 [European Terrestrial Reference System 1989](https://en.wikipedia.org/wiki/European_Terrestrial_Reference_System_1989)
