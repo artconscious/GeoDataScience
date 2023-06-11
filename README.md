@@ -8,15 +8,15 @@ How to handle geo data for analytics, science, and visualization.
 	* Claims handling: hail storm
 * Domain Specific Tools
 	* ArcGis: [2D, 3D & 4D GIS Mapping Software | ArcGIS Pro](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview)
-	* QGIS: [Welcome to the QGIS project!](https://www.qgis.org/en/site/index.html)
+	* **QGIS**: [Welcome to the QGIS project!](https://www.qgis.org/en/site/index.html)
 * Projektionen: 
-	* WGS84 [World Geodetic System](https://en.wikipedia.org/wiki/World_Geodetic_System#WGS84)
+	* **WGS84** [World Geodetic System](https://en.wikipedia.org/wiki/World_Geodetic_System#WGS84)
 	* Gauss-Krüger [Transform Coordinate Systems](https://gauss.svemir.co/#transform)
 	* ETRS89 [European Terrestrial Reference System 1989](https://en.wikipedia.org/wiki/European_Terrestrial_Reference_System_1989)
 	* GPS-Epochen (2.5 cm drift the year) [Is Britain on the move?](https://www.ordnancesurvey.co.uk/blog/is-britain-on-the-move#more-21842)
-	* …
 * Latitude, Longitude, Altitude, Accuracy
-	* Kontinentaldrift
+	* Degrees, Minutes, Seconds (DMS: 48° 12' 29.426" N 16° 22' 25.748" E) vs. **Decimal Degree (DD i.e. 48.208174, 16.373819)** 
+	* **Latitude, Longitude** vs. Longitude, Latitude
 * Raster & Vectors
 * Used Formats:
 	* GeoJSON [GeoJSON](https://geojson.org)
