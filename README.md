@@ -1,7 +1,7 @@
 # GeoDataScience
 How to handle geo data for analytics, science, and visualization.
 
-List of resources and background informations (my private favorites are set **bold**)  
+List of resources and background information (my private favorites are set **bold**)  
 
 * Insurance relevant Use Cases
 	* Policing: demographic data, flood risk, … [Towergate Underwriting starts its journey to become Geo Underwriting](https://www.ardonagh.com/media/announcements/2018/towergate-underwriting-starts-its-journey-to-become-geo-underwriting/)
