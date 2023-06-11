@@ -50,7 +50,7 @@ List of resources and background informations (my private favorites are set **bo
 	* Address to Coordinates
 	* Coordinates to Address
 	* Routing
-		* **Here**
-		* Google
-		* TomTom
+		* **Here** [here Developer](https://developer.here.com/)
+		* Google [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview?hl=de)
+		* TomTom [tomtom developer](https://developer.tomtom.com/)
 		* OSRM [Open Source Routing Machine](https://project-osrm.org/) 
