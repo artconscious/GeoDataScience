@@ -34,7 +34,7 @@ List of resources and background information (my private favorites are set **bol
 	* Xarray [Xarray: N-D labeled arrays and datasets in Python](https://xarray.dev)
 	* **PostGIS** [About PostGIS | PostGIS](https://postgis.net)
 	* SAS Geo [SAS Help Center](https://documentation.sas.com/doc/de/vacdc/v_016/vaobj/n14ezqxeg2a195n1au1q980gbkte.htm)
-	* GRIB [GRIB - Wikipedia](https://en.wikipedia.org/wiki/GRIB)
+	* GRIB (Location for weather data) [GRIB - Wikipedia](https://en.wikipedia.org/wiki/GRIB)
 	* **GeoPandas** [GeoPandas](https://geopandas.org/en/stable/)
 * Python examples with demographic data, flood risk, Post data
 * Notebooks & Maps 
