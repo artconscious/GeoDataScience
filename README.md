@@ -20,7 +20,7 @@ List of resources and background informations (my private favorites are set **bo
 	* GPS Coordinates [Latitude and Longitude](https://sciencenotes.org/latitude-and-longitude/)
 	* Degrees, Minutes, Seconds (DMS: 48° 12' 29.426" N 16° 22' 25.748" E) vs. **Decimal Degree (DD i.e. 48.208174, 16.373819)** 
 	* **Latitude, Longitude** vs. Longitude, Latitude (you need to have a standard from begin on)
-	* Accouracy depends on various parameters including receiver [GNSS/GPS ACCURACY EXPLAINED](https://junipersys.com/support/article/6614)
+	* Accuracy depends on various parameters including receiver [GNSS/GPS ACCURACY EXPLAINED](https://junipersys.com/support/article/6614)
 * Raster & Vectors
 * Used Formats:
 	* GeoJSON [GeoJSON](https://geojson.org)
