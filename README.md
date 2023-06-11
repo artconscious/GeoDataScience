@@ -21,7 +21,9 @@ List of resources and background informations (my private favorites are set **bo
 	* Degrees, Minutes, Seconds (DMS: 48° 12' 29.426" N 16° 22' 25.748" E) vs. **Decimal Degree (DD i.e. 48.208174, 16.373819)** 
 	* **Latitude, Longitude** vs. Longitude, Latitude (you need to have a standard from begin on)
 	* Accuracy depends on various parameters including receiver [GNSS/GPS ACCURACY EXPLAINED](https://junipersys.com/support/article/6614)
-* Raster & Vectors
+	* Differential GPS (relevant for IoT) [A Short Overview of Differential GPS](https://www.oc.nps.edu/oc2902w/gps/dgpsnote.html)
+	* Asissted GPS (relevant for mobile phones) [What Is Assisted GPS?](https://www.iotforall.com/what-is-assisted-gps)
+	* Raster vs. Vector [Difference between a GPS raster map and a vector map](https://www.youtube.com/watch?v=gaQs3yynSEo)
 * Used Formats:
 	* GeoJSON [GeoJSON](https://geojson.org)
 	* SHP [What is a shapefile?—ArcMap | Documentation](https://desktop.arcgis.com/en/arcmap/latest/manage-data/shapefiles/what-is-a-shapefile.htm)
@@ -29,7 +31,7 @@ List of resources and background informations (my private favorites are set **bo
 	* [About PostGIS | PostGIS](https://postgis.net)
 	* [SAS Help Center](https://documentation.sas.com/doc/de/vacdc/v_016/vaobj/n14ezqxeg2a195n1au1q980gbkte.htm)
 	* GRIB [GRIB - Wikipedia](https://en.wikipedia.org/wiki/GRIB)
-* Geohash
+* **Geohash**
 	* [Geohash encoding/decoding](https://www.movable-type.co.uk/scripts/geohash.html)
 	* resolution
 	* sorting
@@ -38,15 +40,17 @@ List of resources and background informations (my private favorites are set **bo
 		* contains, 
 		* …
 * Notebooks & Maps 
-	* Folium
-	* Leaflet
-	* OpenStreetMap
+	* **Folium** (Python) [Folium Quickstart](https://python-visualization.github.io/folium/quickstart.html)
+	* **Leaflet** (Generic JavaScript) [Tutorials](https://leafletjs.com/examples.html)
+	* OpenStreetMap [OpenStreetMap Tile Map Server](https://openmaptiles.org/)
+	* **CartoDB** [Free Map Server](https://carto.com/)
 	* Velocity [Velocity — ipyleaflet  documentation](https://ipyleaflet.readthedocs.io/en/latest/layers/velocity.html)
 	* …
 * Geo Services
 	* Address to Coordinates
 	* Coordinates to Address
 	* Routing
-		* Here
+		* **Here**
 		* Google
 		* TomTom
+		* OSRM [Open Source Routing Machine](https://project-osrm.org/) 
