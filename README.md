@@ -20,7 +20,7 @@ List of resources and background information (my private favorites are set **bol
 * Latitude, Longitude, Altitude, Accuracy
 	* GPS Coordinates [Latitude and Longitude](https://sciencenotes.org/latitude-and-longitude/)
 	* Degrees, Minutes, Seconds (DMS: 48° 12' 29.426" N 16° 22' 25.748" E) vs. **Decimal Degree (DD i.e. 48.208174, 16.373819)** 
-	* **Latitude, Longitude** vs. Longitude, Latitude (__you need to have a standard from day one__)
+	* **Latitude, Longitude** vs. Longitude, Latitude (__you need to have a team wide standard from day one__)
 	* Accuracy depends on various parameters including receiver [GNSS/GPS ACCURACY EXPLAINED](https://junipersys.com/support/article/6614)
 	* Differential GPS (relevant for IoT) [A Short Overview of Differential GPS](https://www.oc.nps.edu/oc2902w/gps/dgpsnote.html)
 	* Asissted GPS (relevant for mobile phones) [What Is Assisted GPS?](https://www.iotforall.com/what-is-assisted-gps)
