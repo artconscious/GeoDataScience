@@ -54,3 +54,10 @@ List of resources and background information (my private favorites are set **bol
 		* Google [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview?hl=de)
 		* TomTom [tomtom developer](https://developer.tomtom.com/)
 		* OSRM [Open Source Routing Machine](https://project-osrm.org/) 
+* Python packages
+	* conda install pandas
+	* conda install geopandas
+	* conda install folium
+	* conda install -c conda-forge ipyleaflet
+	* conda install -c conda-forge here-map-widget-for-jupyter
+
