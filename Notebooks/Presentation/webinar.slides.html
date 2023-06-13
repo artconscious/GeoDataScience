@@ -14696,10 +14696,11 @@ div.jp-OutputPrompt {
 <li><a href="#/7"> Coordinates </a></li>
 <li><a href="#/8"> Typical tasks</a></li>
 <li><a href="#/9"> Dive into location with python </a></li>
-<li><a href="#/10"> Geohash </a>
-&lt;-- ### <a href="#/11"> Geohash </a> --&gt;</li>
+<li><a href="#/10"> Geohash </a></li>
 <li><a href="#/12"> Maps: folium </a></li>
 <li><a href="#/13"> Heatmaps </a></li>
+<li><a href="#/14"> GeoJSON </a></li>
+<li><a href="#/15"> GeoPandas </a></li>
 </ul>
 
 </div>
@@ -14768,12 +14769,11 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">folium</span>
-<span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">48.208174</span><span class="p">,</span> <span class="mf">16.373819</span><span class="p">])</span>
-<span class="n">m</span>
+<span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">48.208174</span><span class="p">,</span> <span class="mf">16.373819</span><span class="p">],</span> <span class="n">zoom_start</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14791,80 +14791,12 @@ div.jp-OutputPrompt {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    
-    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-    
-        &lt;script&gt;
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        &lt;/script&gt;
-    
-    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
-    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://code.jquery.com/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
-    
-            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
-            &lt;style&gt;
-                #map_9f5bfc492f94946191fbcaf9a90c154f {
-                    position: relative;
-                    width: 100.0%;
-                    height: 100.0%;
-                    left: 0.0%;
-                    top: 0.0%;
-                }
-                .leaflet-container { font-size: 1rem; }
-            &lt;/style&gt;
-        
-&lt;/head&gt;
-&lt;body&gt;
-    
-    
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_9f5bfc492f94946191fbcaf9a90c154f&quot; &gt;&lt;/div&gt;
-        
-&lt;/body&gt;
-&lt;script&gt;
-    
-    
-            var map_9f5bfc492f94946191fbcaf9a90c154f = L.map(
-                &quot;map_9f5bfc492f94946191fbcaf9a90c154f&quot;,
-                {
-                    center: [48.208174, 16.373819],
-                    crs: L.CRS.EPSG3857,
-                    zoom: 10,
-                    zoomControl: true,
-                    preferCanvas: false,
-                }
-            );
-
-            
-
-        
-    
-            var tile_layer_052de491e73921a0d91f78f9ca4eba1c = L.tileLayer(
-                &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
-                {&quot;attribution&quot;: &quot;Data by \u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eODbL\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
-            ).addTo(map_9f5bfc492f94946191fbcaf9a90c154f);
-        
-&lt;/script&gt;
-&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe src="about:blank" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" data-html=%3C%21DOCTYPE%20html%3E%0A%3Chead%3E%20%20%20%20%0A%20%20%20%20%3Cmeta%20http-equiv%3D%22content-type%22%20content%3D%22text/html%3B%20charset%3DUTF-8%22%20/%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20L_NO_TOUCH%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20L_DISABLE_3D%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%3C/script%3E%0A%20%20%20%20%0A%20%20%20%20%3Cstyle%3Ehtml%2C%20body%20%7Bwidth%3A%20100%25%3Bheight%3A%20100%25%3Bmargin%3A%200%3Bpadding%3A%200%3B%7D%3C/style%3E%0A%20%20%20%20%3Cstyle%3E%23map%20%7Bposition%3Aabsolute%3Btop%3A0%3Bbottom%3A0%3Bright%3A0%3Bleft%3A0%3B%7D%3C/style%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdn.jsdelivr.net/npm/leaflet%401.6.0/dist/leaflet.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//code.jquery.com/jquery-1.12.4.min.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js%22%3E%3C/script%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdn.jsdelivr.net/npm/leaflet%401.6.0/dist/leaflet.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css%22/%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20initial-scale%3D1.0%2C%20maximum-scale%3D1.0%2C%20user-scalable%3Dno%22%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23map_14ea931122f04d5c9eeb78e6ef5e87e1%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20width%3A%20100.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20height%3A%20100.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20left%3A%200.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20top%3A%200.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/style%3E%0A%20%20%20%20%20%20%20%20%0A%3C/head%3E%0A%3Cbody%3E%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22folium-map%22%20id%3D%22map_14ea931122f04d5c9eeb78e6ef5e87e1%22%20%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%0A%3C/body%3E%0A%3Cscript%3E%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20map_14ea931122f04d5c9eeb78e6ef5e87e1%20%3D%20L.map%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22map_14ea931122f04d5c9eeb78e6ef5e87e1%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20center%3A%20%5B48.208174%2C%2016.373819%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crs%3A%20L.CRS.EPSG3857%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20zoom%3A%2012%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20zoomControl%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20preferCanvas%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20tile_layer_e59aa0249c334f5097080a1e95827bcd%20%3D%20L.tileLayer%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22https%3A//%7Bs%7D.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22attribution%22%3A%20%22Data%20by%20%5Cu0026copy%3B%20%5Cu003ca%20href%3D%5C%22http%3A//openstreetmap.org%5C%22%5Cu003eOpenStreetMap%5Cu003c/a%5Cu003e%2C%20under%20%5Cu003ca%20href%3D%5C%22http%3A//www.openstreetmap.org/copyright%5C%22%5Cu003eODbL%5Cu003c/a%5Cu003e.%22%2C%20%22detectRetina%22%3A%20false%2C%20%22maxNativeZoom%22%3A%2018%2C%20%22maxZoom%22%3A%2018%2C%20%22minZoom%22%3A%200%2C%20%22noWrap%22%3A%20false%2C%20%22opacity%22%3A%201%2C%20%22subdomains%22%3A%20%22abc%22%2C%20%22tms%22%3A%20false%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_14ea931122f04d5c9eeb78e6ef5e87e1%29%3B%0A%20%20%20%20%20%20%20%20%0A%3C/script%3E onload="this.contentDocument.open();this.contentDocument.write(    decodeURIComponent(this.getAttribute('data-html')));this.contentDocument.close();" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
 </div>
 
 </div>
@@ -14971,7 +14903,7 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Coordinates:-Latitude,-Longitude,-Altitude">Coordinates: Latitude, Longitude, Altitude<a class="anchor-link" href="#Coordinates:-Latitude,-Longitude,-Altitude">&#182;</a></h2><h3 id="*--You-can-imagine-the-earth-as-an-spherical-X/Y-coordinate-system">*  You can imagine the earth as an spherical X/Y coordinate system<a class="anchor-link" href="#*--You-can-imagine-the-earth-as-an-spherical-X/Y-coordinate-system">&#182;</a></h3><h3 id="*--X-is-the-Longitude-(Greenwich-=-0.0,-East-direction-is-positive,-West-directions-are-negative,-max-is-180.0/-180.0)">*  X is the Longitude (Greenwich = 0.0, East direction is positive, West directions are negative, max is 180.0/-180.0)<a class="anchor-link" href="#*--X-is-the-Longitude-(Greenwich-=-0.0,-East-direction-is-positive,-West-directions-are-negative,-max-is-180.0/-180.0)">&#182;</a></h3><h3 id="*--Y-is-the-Latitude-(Equator-=-0.0,-North-direction-is-positive,-South-negative,-max-is-90.0/-90.0)">*  Y is the Latitude (Equator = 0.0, North direction is positive, South negative, max is 90.0/-90.0)<a class="anchor-link" href="#*--Y-is-the-Latitude-(Equator-=-0.0,-North-direction-is-positive,-South-negative,-max-is-90.0/-90.0)">&#182;</a></h3><h3 id="*--Notations-can-be-Degrees,-Minutes,-Seconds-(DMS:-48%C2%B0-12'-29.426%22-N-16%C2%B0-22'-25.748%22-E)-vs.-Decimal-Degree-(DD-i.e.-48.208174,-16.373819)">*  Notations can be Degrees, Minutes, Seconds (DMS: 48&#176; 12' 29.426" N 16&#176; 22' 25.748" E) vs. Decimal Degree (DD i.e. 48.208174, 16.373819)<a class="anchor-link" href="#*--Notations-can-be-Degrees,-Minutes,-Seconds-(DMS:-48%C2%B0-12'-29.426%22-N-16%C2%B0-22'-25.748%22-E)-vs.-Decimal-Degree-(DD-i.e.-48.208174,-16.373819)">&#182;</a></h3>
+<h2 id="Coordinates:-Latitude,-Longitude,-Altitude-(WGS84)">Coordinates: Latitude, Longitude, Altitude (WGS84)<a class="anchor-link" href="#Coordinates:-Latitude,-Longitude,-Altitude-(WGS84)">&#182;</a></h2><h3 id="*--You-can-imagine-the-earth-as-an-spherical-X/Y-coordinate-system">*  You can imagine the earth as an spherical X/Y coordinate system<a class="anchor-link" href="#*--You-can-imagine-the-earth-as-an-spherical-X/Y-coordinate-system">&#182;</a></h3><h3 id="*--X-is-the-Longitude-(Greenwich-=-0.0,-East-direction-is-positive,-West-directions-are-negative,-max-is-180.0/-180.0)">*  X is the Longitude (Greenwich = 0.0, East direction is positive, West directions are negative, max is 180.0/-180.0)<a class="anchor-link" href="#*--X-is-the-Longitude-(Greenwich-=-0.0,-East-direction-is-positive,-West-directions-are-negative,-max-is-180.0/-180.0)">&#182;</a></h3><h3 id="*--Y-is-the-Latitude-(Equator-=-0.0,-North-direction-is-positive,-South-negative,-max-is-90.0/-90.0)">*  Y is the Latitude (Equator = 0.0, North direction is positive, South negative, max is 90.0/-90.0)<a class="anchor-link" href="#*--Y-is-the-Latitude-(Equator-=-0.0,-North-direction-is-positive,-South-negative,-max-is-90.0/-90.0)">&#182;</a></h3><h3 id="*--Notations-can-be-Degrees,-Minutes,-Seconds-(DMS:-48%C2%B0-12'-29.426%22-N-16%C2%B0-22'-25.748%22-E)-vs.-Decimal-Degree-(DD-i.e.-48.208174,-16.373819)">*  Notations can be Degrees, Minutes, Seconds (DMS: 48&#176; 12' 29.426" N 16&#176; 22' 25.748" E) vs. Decimal Degree (DD i.e. 48.208174, 16.373819)<a class="anchor-link" href="#*--Notations-can-be-Degrees,-Minutes,-Seconds-(DMS:-48%C2%B0-12'-29.426%22-N-16%C2%B0-22'-25.748%22-E)-vs.-Decimal-Degree-(DD-i.e.-48.208174,-16.373819)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15030,7 +14962,7 @@ div.jp-OutputPrompt {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -15053,7 +14985,7 @@ div.jp-OutputPrompt {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
@@ -15200,65 +15132,12 @@ div.jp-OutputPrompt {
 </div>
 </div>
 </div>
-</div><aside class="notes">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>geohash2
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Collecting geohash2
-  Downloading geohash2-1.1.tar.gz (15 kB)
-  Preparing metadata (setup.py) ... done
-Collecting docutils&gt;=0.3
-  Downloading docutils-0.20.1-py3-none-any.whl (572 kB)
-     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">572.7/572.7 kB</span> <span class="ansi-red-fg">2.3 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>a <span class="ansi-cyan-fg">0:00:01</span>
-Building wheels for collected packages: geohash2
-  Building wheel for geohash2 (setup.py) ... done
-  Created wheel for geohash2: filename=geohash2-1.1-py3-none-any.whl size=15543 sha256=953851bb1db19a7d86db625d76b9d9ed77e6f7c8805269f6612f5168d7305047
-  Stored in directory: /Users/rene/Library/Caches/pip/wheels/f6/7c/c4/1b3c6fea0ebc53bf730dc86bbee7a713d501455dfb4c1f0623
-Successfully built geohash2
-Installing collected packages: docutils, geohash2
-Successfully installed docutils-0.20.1 geohash2-1.1
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-</aside><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">geohash2</span>
@@ -15327,7 +15206,7 @@ Successfully installed docutils-0.20.1 geohash2-1.1
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -15350,7 +15229,7 @@ Successfully installed docutils-0.20.1 geohash2-1.1
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
 
@@ -15507,7 +15386,7 @@ Successfully installed docutils-0.20.1 geohash2-1.1
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Create the Map</span>
@@ -15534,350 +15413,12 @@ Successfully installed docutils-0.20.1 geohash2-1.1
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    
-    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-    
-        &lt;script&gt;
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        &lt;/script&gt;
-    
-    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
-    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://code.jquery.com/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
-    
-            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
-            &lt;style&gt;
-                #map_6c5bb1c9869e63299c4d65f40838a29b {
-                    position: relative;
-                    width: 100.0%;
-                    height: 300.0px;
-                    left: 0.0%;
-                    top: 0.0%;
-                }
-                .leaflet-container { font-size: 1rem; }
-            &lt;/style&gt;
-        
-&lt;/head&gt;
-&lt;body&gt;
-    
-    
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_6c5bb1c9869e63299c4d65f40838a29b&quot; &gt;&lt;/div&gt;
-        
-&lt;/body&gt;
-&lt;script&gt;
-    
-    
-            var map_6c5bb1c9869e63299c4d65f40838a29b = L.map(
-                &quot;map_6c5bb1c9869e63299c4d65f40838a29b&quot;,
-                {
-                    center: [48.167559, 16.356453],
-                    crs: L.CRS.EPSG3857,
-                    zoom: 13,
-                    zoomControl: true,
-                    preferCanvas: false,
-                }
-            );
-
-            
-
-        
-    
-            var tile_layer_689e6c1e602285b52564490e1de7edbb = L.tileLayer(
-                &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
-                {&quot;attribution&quot;: &quot;Data by \u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eODbL\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
-            ).addTo(map_6c5bb1c9869e63299c4d65f40838a29b);
-        
-    
-            var marker_f67de541ddb74e7d5f2e9cf579204f79 = L.marker(
-                [48.167946, 16.349755],
-                {}
-            ).addTo(map_6c5bb1c9869e63299c4d65f40838a29b);
-        
-    
-            var icon_ec98623d4bf75b66df7ea5ce0ac1b131 = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
-            );
-            marker_f67de541ddb74e7d5f2e9cf579204f79.setIcon(icon_ec98623d4bf75b66df7ea5ce0ac1b131);
-        
-    
-        var popup_2c6ec6d42c7f38b5d4169c484a4ad219 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_ab84449826f4de5376d67a36a76e313a = $(`&lt;div id=&quot;html_ab84449826f4de5376d67a36a76e313a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Population: 245&lt;/div&gt;`)[0];
-                popup_2c6ec6d42c7f38b5d4169c484a4ad219.setContent(html_ab84449826f4de5376d67a36a76e313a);
-            
-        
-
-        marker_f67de541ddb74e7d5f2e9cf579204f79.bindPopup(popup_2c6ec6d42c7f38b5d4169c484a4ad219)
-        ;
-
-        
-    
-    
-            var marker_1bc23fe0d6b4f0aeeb705784d60471e0 = L.marker(
-                [48.170186, 16.350036],
-                {}
-            ).addTo(map_6c5bb1c9869e63299c4d65f40838a29b);
-        
-    
-            var icon_572d45452fc1743c037f04c5751f273e = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
-            );
-            marker_1bc23fe0d6b4f0aeeb705784d60471e0.setIcon(icon_572d45452fc1743c037f04c5751f273e);
-        
-    
-        var popup_fec6037e5bc72ee1c4f9f226c918097d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_9ddd808e0ba189b50c5c74a75303aad2 = $(`&lt;div id=&quot;html_9ddd808e0ba189b50c5c74a75303aad2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Population: 845&lt;/div&gt;`)[0];
-                popup_fec6037e5bc72ee1c4f9f226c918097d.setContent(html_9ddd808e0ba189b50c5c74a75303aad2);
-            
-        
-
-        marker_1bc23fe0d6b4f0aeeb705784d60471e0.bindPopup(popup_fec6037e5bc72ee1c4f9f226c918097d)
-        ;
-
-        
-    
-    
-            var marker_76ea953a9ee398c41ba40f9f1443b9b4 = L.marker(
-                [48.165513, 16.352823],
-                {}
-            ).addTo(map_6c5bb1c9869e63299c4d65f40838a29b);
-        
-    
-            var icon_b8d796c5db21669b5f8ed63a3bb1feca = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
-            );
-            marker_76ea953a9ee398c41ba40f9f1443b9b4.setIcon(icon_b8d796c5db21669b5f8ed63a3bb1feca);
-        
-    
-        var popup_660e0677b51b274e819100d7e84e9501 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_11944b7cfb245bcff283b34df233f0c1 = $(`&lt;div id=&quot;html_11944b7cfb245bcff283b34df233f0c1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Population: 71&lt;/div&gt;`)[0];
-                popup_660e0677b51b274e819100d7e84e9501.setContent(html_11944b7cfb245bcff283b34df233f0c1);
-            
-        
-
-        marker_76ea953a9ee398c41ba40f9f1443b9b4.bindPopup(popup_660e0677b51b274e819100d7e84e9501)
-        ;
-
-        
-    
-    
-            var marker_1a850d1f3bad291f0f42286923f82034 = L.marker(
-                [48.167753, 16.353104],
-                {}
-            ).addTo(map_6c5bb1c9869e63299c4d65f40838a29b);
-        
-    
-            var icon_c1b39ac7d259cd45155dfd050ab14c3e = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
-            );
-            marker_1a850d1f3bad291f0f42286923f82034.setIcon(icon_c1b39ac7d259cd45155dfd050ab14c3e);
-        
-    
-        var popup_9df30a445ec803d030753eecc7685312 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_d154058d26c753d3da7e8636fee5bf00 = $(`&lt;div id=&quot;html_d154058d26c753d3da7e8636fee5bf00&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Population: 228&lt;/div&gt;`)[0];
-                popup_9df30a445ec803d030753eecc7685312.setContent(html_d154058d26c753d3da7e8636fee5bf00);
-            
-        
-
-        marker_1a850d1f3bad291f0f42286923f82034.bindPopup(popup_9df30a445ec803d030753eecc7685312)
-        ;
-
-        
-    
-    
-            var marker_3fc2af7622e6e39da8060d955bcd7b5a = L.marker(
-                [48.165319, 16.356172],
-                {}
-            ).addTo(map_6c5bb1c9869e63299c4d65f40838a29b);
-        
-    
-            var icon_ea53513a91bf4f12336219655c3a3fc4 = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
-            );
-            marker_3fc2af7622e6e39da8060d955bcd7b5a.setIcon(icon_ea53513a91bf4f12336219655c3a3fc4);
-        
-    
-        var popup_a35417e90c08c1085eac7d57644758b6 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_f295a3da73100b7926d84332c2a3398e = $(`&lt;div id=&quot;html_f295a3da73100b7926d84332c2a3398e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Population: 252&lt;/div&gt;`)[0];
-                popup_a35417e90c08c1085eac7d57644758b6.setContent(html_f295a3da73100b7926d84332c2a3398e);
-            
-        
-
-        marker_3fc2af7622e6e39da8060d955bcd7b5a.bindPopup(popup_a35417e90c08c1085eac7d57644758b6)
-        ;
-
-        
-    
-    
-            var marker_cd1b2f010f8deeb0dab25d228c4a218c = L.marker(
-                [48.167559, 16.356453],
-                {}
-            ).addTo(map_6c5bb1c9869e63299c4d65f40838a29b);
-        
-    
-            var icon_ec69939fb8956be6f35c6d9311d2500b = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
-            );
-            marker_cd1b2f010f8deeb0dab25d228c4a218c.setIcon(icon_ec69939fb8956be6f35c6d9311d2500b);
-        
-    
-        var popup_c1c646d60385e68b3376f780b6845a3b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_bce1d39c5eef4942785de0a097f5b54a = $(`&lt;div id=&quot;html_bce1d39c5eef4942785de0a097f5b54a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Population: 554&lt;/div&gt;`)[0];
-                popup_c1c646d60385e68b3376f780b6845a3b.setContent(html_bce1d39c5eef4942785de0a097f5b54a);
-            
-        
-
-        marker_cd1b2f010f8deeb0dab25d228c4a218c.bindPopup(popup_c1c646d60385e68b3376f780b6845a3b)
-        ;
-
-        
-    
-    
-            var marker_1c2daa8028d77095666ae4c90a56d390 = L.marker(
-                [48.169992, 16.353386],
-                {}
-            ).addTo(map_6c5bb1c9869e63299c4d65f40838a29b);
-        
-    
-            var icon_e8a6b7445c9b981c6b4dd09a8a43c8ee = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
-            );
-            marker_1c2daa8028d77095666ae4c90a56d390.setIcon(icon_e8a6b7445c9b981c6b4dd09a8a43c8ee);
-        
-    
-        var popup_a537db91c5052ea9cd867c4799d932c2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_18526ca62cebae61d4806484b4f2417e = $(`&lt;div id=&quot;html_18526ca62cebae61d4806484b4f2417e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Population: 862&lt;/div&gt;`)[0];
-                popup_a537db91c5052ea9cd867c4799d932c2.setContent(html_18526ca62cebae61d4806484b4f2417e);
-            
-        
-
-        marker_1c2daa8028d77095666ae4c90a56d390.bindPopup(popup_a537db91c5052ea9cd867c4799d932c2)
-        ;
-
-        
-    
-    
-            var marker_4d88a82a3fd2d476f8eac57bc915b0ea = L.marker(
-                [48.172232, 16.353667],
-                {}
-            ).addTo(map_6c5bb1c9869e63299c4d65f40838a29b);
-        
-    
-            var icon_e5208955e99cc44d16b2b96b30b7b00a = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
-            );
-            marker_4d88a82a3fd2d476f8eac57bc915b0ea.setIcon(icon_e5208955e99cc44d16b2b96b30b7b00a);
-        
-    
-        var popup_b7bf8b6c4232607303769eaf39d35440 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_e0635e09dc6e86abd0ea9a7821c4d298 = $(`&lt;div id=&quot;html_e0635e09dc6e86abd0ea9a7821c4d298&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Population: 2461&lt;/div&gt;`)[0];
-                popup_b7bf8b6c4232607303769eaf39d35440.setContent(html_e0635e09dc6e86abd0ea9a7821c4d298);
-            
-        
-
-        marker_4d88a82a3fd2d476f8eac57bc915b0ea.bindPopup(popup_b7bf8b6c4232607303769eaf39d35440)
-        ;
-
-        
-    
-    
-            var marker_740360742e418471db9007b34b1d5f8e = L.marker(
-                [48.169799, 16.356735],
-                {}
-            ).addTo(map_6c5bb1c9869e63299c4d65f40838a29b);
-        
-    
-            var icon_a2882e8f5357fc143cb67f1dd5eab225 = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
-            );
-            marker_740360742e418471db9007b34b1d5f8e.setIcon(icon_a2882e8f5357fc143cb67f1dd5eab225);
-        
-    
-        var popup_20cf04578a09d2945ffb0671fda094d6 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_bd4853ec73b00a3d62cc2ba1fd666a70 = $(`&lt;div id=&quot;html_bd4853ec73b00a3d62cc2ba1fd666a70&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Population: 411&lt;/div&gt;`)[0];
-                popup_20cf04578a09d2945ffb0671fda094d6.setContent(html_bd4853ec73b00a3d62cc2ba1fd666a70);
-            
-        
-
-        marker_740360742e418471db9007b34b1d5f8e.bindPopup(popup_20cf04578a09d2945ffb0671fda094d6)
-        ;
-
-        
-    
-    
-            var marker_2817e0f03e2da6c97b7518337af72426 = L.marker(
-                [48.172039, 16.357017],
-                {}
-            ).addTo(map_6c5bb1c9869e63299c4d65f40838a29b);
-        
-    
-            var icon_6b5a0ff1cb69e6ae56ea5c9e0b89ac4a = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
-            );
-            marker_2817e0f03e2da6c97b7518337af72426.setIcon(icon_6b5a0ff1cb69e6ae56ea5c9e0b89ac4a);
-        
-    
-        var popup_9e6b8569c756e12e100b34780fe845e8 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_bdc3f1752e32d3ea7276f3bd926d1a5c = $(`&lt;div id=&quot;html_bdc3f1752e32d3ea7276f3bd926d1a5c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Population: 1752&lt;/div&gt;`)[0];
-                popup_9e6b8569c756e12e100b34780fe845e8.setContent(html_bdc3f1752e32d3ea7276f3bd926d1a5c);
-            
-        
-
-        marker_2817e0f03e2da6c97b7518337af72426.bindPopup(popup_9e6b8569c756e12e100b34780fe845e8)
-        ;
-
-        
-    
-&lt;/script&gt;
-&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe src="about:blank" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" data-html=%3C%21DOCTYPE%20html%3E%0A%3Chead%3E%20%20%20%20%0A%20%20%20%20%3Cmeta%20http-equiv%3D%22content-type%22%20content%3D%22text/html%3B%20charset%3DUTF-8%22%20/%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20L_NO_TOUCH%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20L_DISABLE_3D%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%3C/script%3E%0A%20%20%20%20%0A%20%20%20%20%3Cstyle%3Ehtml%2C%20body%20%7Bwidth%3A%20100%25%3Bheight%3A%20100%25%3Bmargin%3A%200%3Bpadding%3A%200%3B%7D%3C/style%3E%0A%20%20%20%20%3Cstyle%3E%23map%20%7Bposition%3Aabsolute%3Btop%3A0%3Bbottom%3A0%3Bright%3A0%3Bleft%3A0%3B%7D%3C/style%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdn.jsdelivr.net/npm/leaflet%401.6.0/dist/leaflet.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//code.jquery.com/jquery-1.12.4.min.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js%22%3E%3C/script%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdn.jsdelivr.net/npm/leaflet%401.6.0/dist/leaflet.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css%22/%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20initial-scale%3D1.0%2C%20maximum-scale%3D1.0%2C%20user-scalable%3Dno%22%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23map_ea24c4f8d7ca49eaace7d9d8152f6a71%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20width%3A%20100.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20height%3A%20300.0px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20left%3A%200.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20top%3A%200.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/style%3E%0A%20%20%20%20%20%20%20%20%0A%3C/head%3E%0A%3Cbody%3E%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22folium-map%22%20id%3D%22map_ea24c4f8d7ca49eaace7d9d8152f6a71%22%20%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%0A%3C/body%3E%0A%3Cscript%3E%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20map_ea24c4f8d7ca49eaace7d9d8152f6a71%20%3D%20L.map%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22map_ea24c4f8d7ca49eaace7d9d8152f6a71%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20center%3A%20%5B48.167559%2C%2016.356453%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crs%3A%20L.CRS.EPSG3857%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20zoom%3A%2013%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20zoomControl%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20preferCanvas%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20tile_layer_1a0a94d7b772410b8602ad9033f6511a%20%3D%20L.tileLayer%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22https%3A//%7Bs%7D.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22attribution%22%3A%20%22Data%20by%20%5Cu0026copy%3B%20%5Cu003ca%20href%3D%5C%22http%3A//openstreetmap.org%5C%22%5Cu003eOpenStreetMap%5Cu003c/a%5Cu003e%2C%20under%20%5Cu003ca%20href%3D%5C%22http%3A//www.openstreetmap.org/copyright%5C%22%5Cu003eODbL%5Cu003c/a%5Cu003e.%22%2C%20%22detectRetina%22%3A%20false%2C%20%22maxNativeZoom%22%3A%2018%2C%20%22maxZoom%22%3A%2018%2C%20%22minZoom%22%3A%200%2C%20%22noWrap%22%3A%20false%2C%20%22opacity%22%3A%201%2C%20%22subdomains%22%3A%20%22abc%22%2C%20%22tms%22%3A%20false%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_ea24c4f8d7ca49eaace7d9d8152f6a71%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20marker_e2ce9e3d13834e43af926a28005acdb8%20%3D%20L.marker%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B48.167946%2C%2016.349755%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_ea24c4f8d7ca49eaace7d9d8152f6a71%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20icon_330dd068009a4dbcb2288f9a01121df2%20%3D%20L.AwesomeMarkers.icon%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22extraClasses%22%3A%20%22fa-rotate-0%22%2C%20%22icon%22%3A%20%22info-sign%22%2C%20%22iconColor%22%3A%20%22white%22%2C%20%22markerColor%22%3A%20%22blue%22%2C%20%22prefix%22%3A%20%22glyphicon%22%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20marker_e2ce9e3d13834e43af926a28005acdb8.setIcon%28icon_330dd068009a4dbcb2288f9a01121df2%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20popup_cf23f6b2071240609e6338f3528053e9%20%3D%20L.popup%28%7B%22maxWidth%22%3A%20%22100%25%22%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20html_fd1d49a821234e0f9c214e6e552f81a6%20%3D%20%24%28%60%3Cdiv%20id%3D%22html_fd1d49a821234e0f9c214e6e552f81a6%22%20style%3D%22width%3A%20100.0%25%3B%20height%3A%20100.0%25%3B%22%3EPopulation%3A%20245%3C/div%3E%60%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20popup_cf23f6b2071240609e6338f3528053e9.setContent%28html_fd1d49a821234e0f9c214e6e552f81a6%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20marker_e2ce9e3d13834e43af926a28005acdb8.bindPopup%28popup_cf23f6b2071240609e6338f3528053e9%29%0A%20%20%20%20%20%20%20%20%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20marker_3a87f96a380d482ab03d9270f91348ed%20%3D%20L.marker%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B48.170186%2C%2016.350036%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_ea24c4f8d7ca49eaace7d9d8152f6a71%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20icon_0ffaa6d2419045c1a5e1c01e1fc9d496%20%3D%20L.AwesomeMarkers.icon%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22extraClasses%22%3A%20%22fa-rotate-0%22%2C%20%22icon%22%3A%20%22info-sign%22%2C%20%22iconColor%22%3A%20%22white%22%2C%20%22markerColor%22%3A%20%22blue%22%2C%20%22prefix%22%3A%20%22glyphicon%22%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20marker_3a87f96a380d482ab03d9270f91348ed.setIcon%28icon_0ffaa6d2419045c1a5e1c01e1fc9d496%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20popup_53558a25e6ff4e53b2e45540abd6b66e%20%3D%20L.popup%28%7B%22maxWidth%22%3A%20%22100%25%22%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20html_737ca1d4fd4346cf952867c8fd9582a0%20%3D%20%24%28%60%3Cdiv%20id%3D%22html_737ca1d4fd4346cf952867c8fd9582a0%22%20style%3D%22width%3A%20100.0%25%3B%20height%3A%20100.0%25%3B%22%3EPopulation%3A%20845%3C/div%3E%60%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20popup_53558a25e6ff4e53b2e45540abd6b66e.setContent%28html_737ca1d4fd4346cf952867c8fd9582a0%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20marker_3a87f96a380d482ab03d9270f91348ed.bindPopup%28popup_53558a25e6ff4e53b2e45540abd6b66e%29%0A%20%20%20%20%20%20%20%20%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20marker_493c9517776243dc8fc99c83f02336b7%20%3D%20L.marker%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B48.165513%2C%2016.352823%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_ea24c4f8d7ca49eaace7d9d8152f6a71%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20icon_5326ca1aadbe44df91da7391f1ba6c9d%20%3D%20L.AwesomeMarkers.icon%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22extraClasses%22%3A%20%22fa-rotate-0%22%2C%20%22icon%22%3A%20%22info-sign%22%2C%20%22iconColor%22%3A%20%22white%22%2C%20%22markerColor%22%3A%20%22blue%22%2C%20%22prefix%22%3A%20%22glyphicon%22%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20marker_493c9517776243dc8fc99c83f02336b7.setIcon%28icon_5326ca1aadbe44df91da7391f1ba6c9d%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20popup_e4c6e06d8918472e8136cce07e75cee4%20%3D%20L.popup%28%7B%22maxWidth%22%3A%20%22100%25%22%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20html_9fe940e0602d49e3bacb985bf22b222b%20%3D%20%24%28%60%3Cdiv%20id%3D%22html_9fe940e0602d49e3bacb985bf22b222b%22%20style%3D%22width%3A%20100.0%25%3B%20height%3A%20100.0%25%3B%22%3EPopulation%3A%2071%3C/div%3E%60%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20popup_e4c6e06d8918472e8136cce07e75cee4.setContent%28html_9fe940e0602d49e3bacb985bf22b222b%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20marker_493c9517776243dc8fc99c83f02336b7.bindPopup%28popup_e4c6e06d8918472e8136cce07e75cee4%29%0A%20%20%20%20%20%20%20%20%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20marker_942199a3d8da41a8a8d1202e01830f29%20%3D%20L.marker%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B48.167753%2C%2016.353104%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_ea24c4f8d7ca49eaace7d9d8152f6a71%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20icon_51fbd69abfe14765951c5050b25dbff0%20%3D%20L.AwesomeMarkers.icon%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22extraClasses%22%3A%20%22fa-rotate-0%22%2C%20%22icon%22%3A%20%22info-sign%22%2C%20%22iconColor%22%3A%20%22white%22%2C%20%22markerColor%22%3A%20%22blue%22%2C%20%22prefix%22%3A%20%22glyphicon%22%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20marker_942199a3d8da41a8a8d1202e01830f29.setIcon%28icon_51fbd69abfe14765951c5050b25dbff0%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20popup_2717d30314ca4794b379582364d69d6e%20%3D%20L.popup%28%7B%22maxWidth%22%3A%20%22100%25%22%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20html_d60a0f54d8cc43e38eed46f952ba30d6%20%3D%20%24%28%60%3Cdiv%20id%3D%22html_d60a0f54d8cc43e38eed46f952ba30d6%22%20style%3D%22width%3A%20100.0%25%3B%20height%3A%20100.0%25%3B%22%3EPopulation%3A%20228%3C/div%3E%60%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20popup_2717d30314ca4794b379582364d69d6e.setContent%28html_d60a0f54d8cc43e38eed46f952ba30d6%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20marker_942199a3d8da41a8a8d1202e01830f29.bindPopup%28popup_2717d30314ca4794b379582364d69d6e%29%0A%20%20%20%20%20%20%20%20%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20marker_37892577282648579cf3cda72e9b9e09%20%3D%20L.marker%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B48.165319%2C%2016.356172%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_ea24c4f8d7ca49eaace7d9d8152f6a71%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20icon_d0c086541429411bb56fd2f9b2cd5e3d%20%3D%20L.AwesomeMarkers.icon%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22extraClasses%22%3A%20%22fa-rotate-0%22%2C%20%22icon%22%3A%20%22info-sign%22%2C%20%22iconColor%22%3A%20%22white%22%2C%20%22markerColor%22%3A%20%22blue%22%2C%20%22prefix%22%3A%20%22glyphicon%22%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20marker_37892577282648579cf3cda72e9b9e09.setIcon%28icon_d0c086541429411bb56fd2f9b2cd5e3d%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20popup_6f6bee8f305a4ef1a2f2a154ccbdf061%20%3D%20L.popup%28%7B%22maxWidth%22%3A%20%22100%25%22%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20html_54ce98bf590e4431b166c18bb5feb297%20%3D%20%24%28%60%3Cdiv%20id%3D%22html_54ce98bf590e4431b166c18bb5feb297%22%20style%3D%22width%3A%20100.0%25%3B%20height%3A%20100.0%25%3B%22%3EPopulation%3A%20252%3C/div%3E%60%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20popup_6f6bee8f305a4ef1a2f2a154ccbdf061.setContent%28html_54ce98bf590e4431b166c18bb5feb297%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20marker_37892577282648579cf3cda72e9b9e09.bindPopup%28popup_6f6bee8f305a4ef1a2f2a154ccbdf061%29%0A%20%20%20%20%20%20%20%20%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20marker_98f19c0e3c764bf4b942d392d62cca6d%20%3D%20L.marker%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B48.167559%2C%2016.356453%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_ea24c4f8d7ca49eaace7d9d8152f6a71%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20icon_56a9eaf112064091bd277e0d338a0030%20%3D%20L.AwesomeMarkers.icon%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22extraClasses%22%3A%20%22fa-rotate-0%22%2C%20%22icon%22%3A%20%22info-sign%22%2C%20%22iconColor%22%3A%20%22white%22%2C%20%22markerColor%22%3A%20%22blue%22%2C%20%22prefix%22%3A%20%22glyphicon%22%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20marker_98f19c0e3c764bf4b942d392d62cca6d.setIcon%28icon_56a9eaf112064091bd277e0d338a0030%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20popup_f42d039c16124fe5bec62f1169f23c1a%20%3D%20L.popup%28%7B%22maxWidth%22%3A%20%22100%25%22%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20html_da204caf392d4023b304e7f3616287fd%20%3D%20%24%28%60%3Cdiv%20id%3D%22html_da204caf392d4023b304e7f3616287fd%22%20style%3D%22width%3A%20100.0%25%3B%20height%3A%20100.0%25%3B%22%3EPopulation%3A%20554%3C/div%3E%60%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20popup_f42d039c16124fe5bec62f1169f23c1a.setContent%28html_da204caf392d4023b304e7f3616287fd%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20marker_98f19c0e3c764bf4b942d392d62cca6d.bindPopup%28popup_f42d039c16124fe5bec62f1169f23c1a%29%0A%20%20%20%20%20%20%20%20%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20marker_e0892dcd428940238d0178d30fa576eb%20%3D%20L.marker%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B48.169992%2C%2016.353386%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_ea24c4f8d7ca49eaace7d9d8152f6a71%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20icon_e0b78d2cbac1416db3ec2dd1e319221d%20%3D%20L.AwesomeMarkers.icon%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22extraClasses%22%3A%20%22fa-rotate-0%22%2C%20%22icon%22%3A%20%22info-sign%22%2C%20%22iconColor%22%3A%20%22white%22%2C%20%22markerColor%22%3A%20%22blue%22%2C%20%22prefix%22%3A%20%22glyphicon%22%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20marker_e0892dcd428940238d0178d30fa576eb.setIcon%28icon_e0b78d2cbac1416db3ec2dd1e319221d%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20popup_9c60b0c3f5234812b844c8022f948902%20%3D%20L.popup%28%7B%22maxWidth%22%3A%20%22100%25%22%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20html_4ccb2a31895f4008b826c7419f25a9b0%20%3D%20%24%28%60%3Cdiv%20id%3D%22html_4ccb2a31895f4008b826c7419f25a9b0%22%20style%3D%22width%3A%20100.0%25%3B%20height%3A%20100.0%25%3B%22%3EPopulation%3A%20862%3C/div%3E%60%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20popup_9c60b0c3f5234812b844c8022f948902.setContent%28html_4ccb2a31895f4008b826c7419f25a9b0%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20marker_e0892dcd428940238d0178d30fa576eb.bindPopup%28popup_9c60b0c3f5234812b844c8022f948902%29%0A%20%20%20%20%20%20%20%20%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20marker_43c08f28d1f24e1690b6ddcc55fa3f59%20%3D%20L.marker%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B48.172232%2C%2016.353667%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_ea24c4f8d7ca49eaace7d9d8152f6a71%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20icon_379604f910ba4e979fba5fdbf15179e3%20%3D%20L.AwesomeMarkers.icon%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22extraClasses%22%3A%20%22fa-rotate-0%22%2C%20%22icon%22%3A%20%22info-sign%22%2C%20%22iconColor%22%3A%20%22white%22%2C%20%22markerColor%22%3A%20%22blue%22%2C%20%22prefix%22%3A%20%22glyphicon%22%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20marker_43c08f28d1f24e1690b6ddcc55fa3f59.setIcon%28icon_379604f910ba4e979fba5fdbf15179e3%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20popup_150b96ce5c0a4e1ca3f0ab14a8e37aa2%20%3D%20L.popup%28%7B%22maxWidth%22%3A%20%22100%25%22%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20html_638d6466baaf4f7d89c05701521bd855%20%3D%20%24%28%60%3Cdiv%20id%3D%22html_638d6466baaf4f7d89c05701521bd855%22%20style%3D%22width%3A%20100.0%25%3B%20height%3A%20100.0%25%3B%22%3EPopulation%3A%202461%3C/div%3E%60%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20popup_150b96ce5c0a4e1ca3f0ab14a8e37aa2.setContent%28html_638d6466baaf4f7d89c05701521bd855%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20marker_43c08f28d1f24e1690b6ddcc55fa3f59.bindPopup%28popup_150b96ce5c0a4e1ca3f0ab14a8e37aa2%29%0A%20%20%20%20%20%20%20%20%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20marker_8299c88c7ec84b529d4b5b3e731d6a32%20%3D%20L.marker%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B48.169799%2C%2016.356735%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_ea24c4f8d7ca49eaace7d9d8152f6a71%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20icon_cabca4fdb1d4488fb4c8a9567d405175%20%3D%20L.AwesomeMarkers.icon%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22extraClasses%22%3A%20%22fa-rotate-0%22%2C%20%22icon%22%3A%20%22info-sign%22%2C%20%22iconColor%22%3A%20%22white%22%2C%20%22markerColor%22%3A%20%22blue%22%2C%20%22prefix%22%3A%20%22glyphicon%22%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20marker_8299c88c7ec84b529d4b5b3e731d6a32.setIcon%28icon_cabca4fdb1d4488fb4c8a9567d405175%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20popup_efa834ecc8e44c28883c3bf822eef33d%20%3D%20L.popup%28%7B%22maxWidth%22%3A%20%22100%25%22%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20html_ce383ccfdd5346f4967dfcf66bcfdeb7%20%3D%20%24%28%60%3Cdiv%20id%3D%22html_ce383ccfdd5346f4967dfcf66bcfdeb7%22%20style%3D%22width%3A%20100.0%25%3B%20height%3A%20100.0%25%3B%22%3EPopulation%3A%20411%3C/div%3E%60%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20popup_efa834ecc8e44c28883c3bf822eef33d.setContent%28html_ce383ccfdd5346f4967dfcf66bcfdeb7%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20marker_8299c88c7ec84b529d4b5b3e731d6a32.bindPopup%28popup_efa834ecc8e44c28883c3bf822eef33d%29%0A%20%20%20%20%20%20%20%20%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20marker_a76a4c49006d4b4e8e404bd96bccebdc%20%3D%20L.marker%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B48.172039%2C%2016.357017%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_ea24c4f8d7ca49eaace7d9d8152f6a71%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20icon_5e2c647a81e44d09a5b73afd2dac59a7%20%3D%20L.AwesomeMarkers.icon%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22extraClasses%22%3A%20%22fa-rotate-0%22%2C%20%22icon%22%3A%20%22info-sign%22%2C%20%22iconColor%22%3A%20%22white%22%2C%20%22markerColor%22%3A%20%22blue%22%2C%20%22prefix%22%3A%20%22glyphicon%22%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20marker_a76a4c49006d4b4e8e404bd96bccebdc.setIcon%28icon_5e2c647a81e44d09a5b73afd2dac59a7%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20popup_f3609c032b424d0a8eddce208b99ce9f%20%3D%20L.popup%28%7B%22maxWidth%22%3A%20%22100%25%22%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20html_eb37eb5f5fe14d499b18eec19c1f6d56%20%3D%20%24%28%60%3Cdiv%20id%3D%22html_eb37eb5f5fe14d499b18eec19c1f6d56%22%20style%3D%22width%3A%20100.0%25%3B%20height%3A%20100.0%25%3B%22%3EPopulation%3A%201752%3C/div%3E%60%29%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20popup_f3609c032b424d0a8eddce208b99ce9f.setContent%28html_eb37eb5f5fe14d499b18eec19c1f6d56%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20marker_a76a4c49006d4b4e8e404bd96bccebdc.bindPopup%28popup_f3609c032b424d0a8eddce208b99ce9f%29%0A%20%20%20%20%20%20%20%20%3B%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%3C/script%3E onload="this.contentDocument.open();this.contentDocument.write(    decodeURIComponent(this.getAttribute('data-html')));this.contentDocument.close();" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
 </div>
 
 </div>
@@ -15916,7 +15457,7 @@ Successfully installed docutils-0.20.1 geohash2-1.1
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">folium</span>
@@ -15942,87 +15483,12 @@ Successfully installed docutils-0.20.1 geohash2-1.1
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[77]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    
-    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-    
-        &lt;script&gt;
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        &lt;/script&gt;
-    
-    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
-    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://code.jquery.com/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
-    
-            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
-            &lt;style&gt;
-                #map_94cd63b8a2998e2ec9dc13f10fdba769 {
-                    position: relative;
-                    width: 100.0%;
-                    height: 300.0px;
-                    left: 0.0%;
-                    top: 0.0%;
-                }
-                .leaflet-container { font-size: 1rem; }
-            &lt;/style&gt;
-        
-    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js&quot;&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    
-    
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_94cd63b8a2998e2ec9dc13f10fdba769&quot; &gt;&lt;/div&gt;
-        
-&lt;/body&gt;
-&lt;script&gt;
-    
-    
-            var map_94cd63b8a2998e2ec9dc13f10fdba769 = L.map(
-                &quot;map_94cd63b8a2998e2ec9dc13f10fdba769&quot;,
-                {
-                    center: [48.167559, 16.356453],
-                    crs: L.CRS.EPSG3857,
-                    zoom: 14,
-                    zoomControl: true,
-                    preferCanvas: false,
-                }
-            );
-
-            
-
-        
-    
-            var tile_layer_c0551fc597f7ea45a1b0c6a4b699d6fa = L.tileLayer(
-                &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
-                {&quot;attribution&quot;: &quot;Data by \u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eODbL\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
-            ).addTo(map_94cd63b8a2998e2ec9dc13f10fdba769);
-        
-    
-            var heat_map_25f5604ab5b932cd036a70fd919f880a = L.heatLayer(
-                [[48.167946, 16.349755, 245.0], [48.170186, 16.350036, 845.0], [48.165513, 16.352823, 71.0], [48.167753, 16.353104, 228.0], [48.165319, 16.356172, 252.0], [48.167559, 16.356453, 554.0], [48.169992, 16.353386, 862.0], [48.172232, 16.353667, 2461.0], [48.169799, 16.356735, 411.0], [48.172039, 16.357017, 1752.0]],
-                {&quot;blur&quot;: 15, &quot;maxZoom&quot;: 18, &quot;minOpacity&quot;: 0.5, &quot;radius&quot;: 25}
-            ).addTo(map_94cd63b8a2998e2ec9dc13f10fdba769);
-        
-&lt;/script&gt;
-&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe src="about:blank" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" data-html=%3C%21DOCTYPE%20html%3E%0A%3Chead%3E%20%20%20%20%0A%20%20%20%20%3Cmeta%20http-equiv%3D%22content-type%22%20content%3D%22text/html%3B%20charset%3DUTF-8%22%20/%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20L_NO_TOUCH%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20L_DISABLE_3D%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%3C/script%3E%0A%20%20%20%20%0A%20%20%20%20%3Cstyle%3Ehtml%2C%20body%20%7Bwidth%3A%20100%25%3Bheight%3A%20100%25%3Bmargin%3A%200%3Bpadding%3A%200%3B%7D%3C/style%3E%0A%20%20%20%20%3Cstyle%3E%23map%20%7Bposition%3Aabsolute%3Btop%3A0%3Bbottom%3A0%3Bright%3A0%3Bleft%3A0%3B%7D%3C/style%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdn.jsdelivr.net/npm/leaflet%401.6.0/dist/leaflet.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//code.jquery.com/jquery-1.12.4.min.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js%22%3E%3C/script%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdn.jsdelivr.net/npm/leaflet%401.6.0/dist/leaflet.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css%22/%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20initial-scale%3D1.0%2C%20maximum-scale%3D1.0%2C%20user-scalable%3Dno%22%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23map_f618c448ce1649468e96e74f546674b8%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20width%3A%20100.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20height%3A%20300.0px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20left%3A%200.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20top%3A%200.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/style%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdn.jsdelivr.net/gh/python-visualization/folium%40main/folium/templates/leaflet_heat.min.js%22%3E%3C/script%3E%0A%3C/head%3E%0A%3Cbody%3E%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22folium-map%22%20id%3D%22map_f618c448ce1649468e96e74f546674b8%22%20%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%0A%3C/body%3E%0A%3Cscript%3E%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20map_f618c448ce1649468e96e74f546674b8%20%3D%20L.map%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22map_f618c448ce1649468e96e74f546674b8%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20center%3A%20%5B48.167559%2C%2016.356453%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crs%3A%20L.CRS.EPSG3857%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20zoom%3A%2014%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20zoomControl%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20preferCanvas%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20tile_layer_e752f37b5fc247c88259bc56bbb2619d%20%3D%20L.tileLayer%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22https%3A//%7Bs%7D.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22attribution%22%3A%20%22Data%20by%20%5Cu0026copy%3B%20%5Cu003ca%20href%3D%5C%22http%3A//openstreetmap.org%5C%22%5Cu003eOpenStreetMap%5Cu003c/a%5Cu003e%2C%20under%20%5Cu003ca%20href%3D%5C%22http%3A//www.openstreetmap.org/copyright%5C%22%5Cu003eODbL%5Cu003c/a%5Cu003e.%22%2C%20%22detectRetina%22%3A%20false%2C%20%22maxNativeZoom%22%3A%2018%2C%20%22maxZoom%22%3A%2018%2C%20%22minZoom%22%3A%200%2C%20%22noWrap%22%3A%20false%2C%20%22opacity%22%3A%201%2C%20%22subdomains%22%3A%20%22abc%22%2C%20%22tms%22%3A%20false%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_f618c448ce1649468e96e74f546674b8%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20heat_map_3cbda6014a454570807f382608ae9a60%20%3D%20L.heatLayer%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B%5B48.167946%2C%2016.349755%2C%20245.0%5D%2C%20%5B48.170186%2C%2016.350036%2C%20845.0%5D%2C%20%5B48.165513%2C%2016.352823%2C%2071.0%5D%2C%20%5B48.167753%2C%2016.353104%2C%20228.0%5D%2C%20%5B48.165319%2C%2016.356172%2C%20252.0%5D%2C%20%5B48.167559%2C%2016.356453%2C%20554.0%5D%2C%20%5B48.169992%2C%2016.353386%2C%20862.0%5D%2C%20%5B48.172232%2C%2016.353667%2C%202461.0%5D%2C%20%5B48.169799%2C%2016.356735%2C%20411.0%5D%2C%20%5B48.172039%2C%2016.357017%2C%201752.0%5D%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22blur%22%3A%2015%2C%20%22maxZoom%22%3A%2018%2C%20%22minOpacity%22%3A%200.5%2C%20%22radius%22%3A%2025%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_f618c448ce1649468e96e74f546674b8%29%3B%0A%20%20%20%20%20%20%20%20%0A%3C/script%3E onload="this.contentDocument.open();this.contentDocument.write(    decodeURIComponent(this.getAttribute('data-html')));this.contentDocument.close();" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
 </div>
 
 </div>
@@ -16061,10 +15527,11 @@ Successfully installed docutils-0.20.1 geohash2-1.1
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[86]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">folium</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">folium.plugins</span> <span class="kn">import</span> <span class="n">HeatMap</span>
 <span class="n">map_obj</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span>
     <span class="n">tiles</span><span class="o">=</span><span class="s1">'Stamen Toner'</span><span class="p">,</span> 
@@ -16089,87 +15556,12 @@ Successfully installed docutils-0.20.1 geohash2-1.1
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[86]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    
-    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-    
-        &lt;script&gt;
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        &lt;/script&gt;
-    
-    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
-    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://code.jquery.com/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
-    
-            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
-            &lt;style&gt;
-                #map_183f56b8dfd050266b6918d28343413d {
-                    position: relative;
-                    width: 100.0%;
-                    height: 300.0px;
-                    left: 0.0%;
-                    top: 0.0%;
-                }
-                .leaflet-container { font-size: 1rem; }
-            &lt;/style&gt;
-        
-    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js&quot;&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    
-    
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_183f56b8dfd050266b6918d28343413d&quot; &gt;&lt;/div&gt;
-        
-&lt;/body&gt;
-&lt;script&gt;
-    
-    
-            var map_183f56b8dfd050266b6918d28343413d = L.map(
-                &quot;map_183f56b8dfd050266b6918d28343413d&quot;,
-                {
-                    center: [48.167559, 16.356453],
-                    crs: L.CRS.EPSG3857,
-                    zoom: 14,
-                    zoomControl: true,
-                    preferCanvas: false,
-                }
-            );
-
-            
-
-        
-    
-            var tile_layer_7b4266ba9787fd2275100158af66d25e = L.tileLayer(
-                &quot;https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png&quot;,
-                {&quot;attribution&quot;: &quot;Map tiles by \u003ca target=\&quot;_blank\&quot; href=\&quot;http://stamen.com\&quot;\u003eStamen Design\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://creativecommons.org/licenses/by/3.0\&quot;\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eODbL\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
-            ).addTo(map_183f56b8dfd050266b6918d28343413d);
-        
-    
-            var heat_map_b43f5bd409a5486a9702546c846db862 = L.heatLayer(
-                [[48.167946, 16.349755, 185.812962], [48.170186, 16.350036, 561.995497], [48.165513, 16.352823, 161.007564], [48.167753, 16.353104, 483.753265], [48.165319, 16.356172, 420.727509], [48.167559, 16.356453, 369.646501], [48.169992, 16.353386, 627.832475], [48.172232, 16.353667, 1069.89027], [48.169799, 16.356735, 305.818047], [48.172039, 16.357017, 609.565694]],
-                {&quot;blur&quot;: 15, &quot;maxZoom&quot;: 18, &quot;minOpacity&quot;: 0.5, &quot;radius&quot;: 25}
-            ).addTo(map_183f56b8dfd050266b6918d28343413d);
-        
-&lt;/script&gt;
-&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe src="about:blank" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" data-html=%3C%21DOCTYPE%20html%3E%0A%3Chead%3E%20%20%20%20%0A%20%20%20%20%3Cmeta%20http-equiv%3D%22content-type%22%20content%3D%22text/html%3B%20charset%3DUTF-8%22%20/%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20L_NO_TOUCH%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20L_DISABLE_3D%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%3C/script%3E%0A%20%20%20%20%0A%20%20%20%20%3Cstyle%3Ehtml%2C%20body%20%7Bwidth%3A%20100%25%3Bheight%3A%20100%25%3Bmargin%3A%200%3Bpadding%3A%200%3B%7D%3C/style%3E%0A%20%20%20%20%3Cstyle%3E%23map%20%7Bposition%3Aabsolute%3Btop%3A0%3Bbottom%3A0%3Bright%3A0%3Bleft%3A0%3B%7D%3C/style%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdn.jsdelivr.net/npm/leaflet%401.6.0/dist/leaflet.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//code.jquery.com/jquery-1.12.4.min.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js%22%3E%3C/script%3E%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js%22%3E%3C/script%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdn.jsdelivr.net/npm/leaflet%401.6.0/dist/leaflet.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css%22/%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css%22/%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20initial-scale%3D1.0%2C%20maximum-scale%3D1.0%2C%20user-scalable%3Dno%22%20/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23map_274d891f98494605baaa1824df57d638%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20width%3A%20100.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20height%3A%20300.0px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20left%3A%200.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20top%3A%200.0%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/style%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%3Cscript%20src%3D%22https%3A//cdn.jsdelivr.net/gh/python-visualization/folium%40main/folium/templates/leaflet_heat.min.js%22%3E%3C/script%3E%0A%3C/head%3E%0A%3Cbody%3E%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22folium-map%22%20id%3D%22map_274d891f98494605baaa1824df57d638%22%20%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%0A%3C/body%3E%0A%3Cscript%3E%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20map_274d891f98494605baaa1824df57d638%20%3D%20L.map%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22map_274d891f98494605baaa1824df57d638%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20center%3A%20%5B48.167559%2C%2016.356453%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crs%3A%20L.CRS.EPSG3857%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20zoom%3A%2014%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20zoomControl%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20preferCanvas%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20tile_layer_24d65b6250e14ad59d6635395e853cee%20%3D%20L.tileLayer%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22https%3A//stamen-tiles-%7Bs%7D.a.ssl.fastly.net/toner/%7Bz%7D/%7Bx%7D/%7By%7D.png%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22attribution%22%3A%20%22Map%20tiles%20by%20%5Cu003ca%20href%3D%5C%22http%3A//stamen.com%5C%22%5Cu003eStamen%20Design%5Cu003c/a%5Cu003e%2C%20under%20%5Cu003ca%20href%3D%5C%22http%3A//creativecommons.org/licenses/by/3.0%5C%22%5Cu003eCC%20BY%203.0%5Cu003c/a%5Cu003e.%20Data%20by%20%5Cu0026copy%3B%20%5Cu003ca%20href%3D%5C%22http%3A//openstreetmap.org%5C%22%5Cu003eOpenStreetMap%5Cu003c/a%5Cu003e%2C%20under%20%5Cu003ca%20href%3D%5C%22http%3A//www.openstreetmap.org/copyright%5C%22%5Cu003eODbL%5Cu003c/a%5Cu003e.%22%2C%20%22detectRetina%22%3A%20false%2C%20%22maxNativeZoom%22%3A%2018%2C%20%22maxZoom%22%3A%2018%2C%20%22minZoom%22%3A%200%2C%20%22noWrap%22%3A%20false%2C%20%22opacity%22%3A%201%2C%20%22subdomains%22%3A%20%22abc%22%2C%20%22tms%22%3A%20false%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_274d891f98494605baaa1824df57d638%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20heat_map_4d00fc2ea2b5488cba0ec60dc4ceb982%20%3D%20L.heatLayer%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B%5B48.167946%2C%2016.349755%2C%20185.812962%5D%2C%20%5B48.170186%2C%2016.350036%2C%20561.995497%5D%2C%20%5B48.165513%2C%2016.352823%2C%20161.007564%5D%2C%20%5B48.167753%2C%2016.353104%2C%20483.753265%5D%2C%20%5B48.165319%2C%2016.356172%2C%20420.727509%5D%2C%20%5B48.167559%2C%2016.356453%2C%20369.646501%5D%2C%20%5B48.169992%2C%2016.353386%2C%20627.832475%5D%2C%20%5B48.172232%2C%2016.353667%2C%201069.89027%5D%2C%20%5B48.169799%2C%2016.356735%2C%20305.818047%5D%2C%20%5B48.172039%2C%2016.357017%2C%20609.565694%5D%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%22blur%22%3A%2015%2C%20%22maxZoom%22%3A%2018%2C%20%22minOpacity%22%3A%200.5%2C%20%22radius%22%3A%2025%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%29.addTo%28map_274d891f98494605baaa1824df57d638%29%3B%0A%20%20%20%20%20%20%20%20%0A%3C/script%3E onload="this.contentDocument.open();this.contentDocument.write(    decodeURIComponent(this.getAttribute('data-html')));this.contentDocument.close();" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
 </div>
 
 </div>
@@ -16179,12 +15571,12 @@ Successfully installed docutils-0.20.1 geohash2-1.1
 </div>
 
 </div><aside class="notes">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -16209,20 +15601,45 @@ Successfully installed docutils-0.20.1 geohash2-1.1
 <span class="p">)</span>
 <span class="n">geo_json</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">to_geojson</span><span class="p">()</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">geo_json</span>
-<span class="c1"># geo_layer = GeoJSON(data=data, style={"lineWidth": 5})</span>
+<span class="n">geo_layer</span> <span class="o">=</span> <span class="n">GeoJSON</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s2">"lineWidth"</span><span class="p">:</span> <span class="mi">5</span><span class="p">})</span>
 
-<span class="c1"># m = Map(api_key=LS_API_KEY, center=[52.5207, 13.4283], zoom=14)</span>
-<span class="c1"># origin_marker = Marker(lat=52.51375, lng=13.42462)</span>
-<span class="c1"># dest_marker = Marker(lat=52.52332, lng=13.42800)</span>
-<span class="c1"># m.add_layer(geo_layer)</span>
-<span class="c1"># m.add_object(origin_marker)</span>
-<span class="c1"># m.add_object(dest_marker)</span>
-<span class="c1"># m</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">LS_API_KEY</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="p">[</span><span class="mf">52.5207</span><span class="p">,</span> <span class="mf">13.4283</span><span class="p">],</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">origin_marker</span> <span class="o">=</span> <span class="n">Marker</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="mf">52.51375</span><span class="p">,</span> <span class="n">lng</span><span class="o">=</span><span class="mf">13.42462</span><span class="p">)</span>
+<span class="n">dest_marker</span> <span class="o">=</span> <span class="n">Marker</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="mf">52.52332</span><span class="p">,</span> <span class="n">lng</span><span class="o">=</span><span class="mf">13.42800</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">geo_layer</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">add_object</span><span class="p">(</span><span class="n">origin_marker</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">add_object</span><span class="p">(</span><span class="n">dest_marker</span><span class="p">)</span>
+<span class="n">m</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
+<pre>Map(api_key=&#39;4MxuGCg8m-MsjE5rjXk12UI-elDSVW2RmAAk5bx_AYM&#39;, center=[52.5207, 13.4283], controls=(ZoomControl(al…</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -16256,7 +15673,7 @@ Successfully installed docutils-0.20.1 geohash2-1.1
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
@@ -16561,19 +15978,19 @@ Successfully installed docutils-0.20.1 geohash2-1.1
         ]
       },
       &#34;properties&#34;: {
-        &#34;id&#34;: &#34;4be7c64c-ae0a-4981-83f3-4bebbe604d23&#34;,
+        &#34;id&#34;: &#34;128dc639-9a1d-493a-bb72-c449ec0e0c37&#34;,
         &#34;type&#34;: &#34;vehicle&#34;,
         &#34;actions&#34;: [
           {
             &#34;action&#34;: &#34;depart&#34;,
-            &#34;duration&#34;: 71,
+            &#34;duration&#34;: 77,
             &#34;length&#34;: 561,
             &#34;instruction&#34;: &#34;Head northeast on Lichtenberger Stra\u00dfe. Go for 561 m.&#34;,
             &#34;offset&#34;: 0
           },
           {
             &#34;action&#34;: &#34;roundaboutExit&#34;,
-            &#34;duration&#34;: 64,
+            &#34;duration&#34;: 51,
             &#34;length&#34;: 371,
             &#34;instruction&#34;: &#34;Take the 2nd exit from Strausberger Platz roundabout onto Lichtenberger Stra\u00dfe. Go for 371 m.&#34;,
             &#34;offset&#34;: 20,
@@ -16582,14 +15999,14 @@ Successfully installed docutils-0.20.1 geohash2-1.1
           },
           {
             &#34;action&#34;: &#34;continue&#34;,
-            &#34;duration&#34;: 36,
+            &#34;duration&#34;: 29,
             &#34;length&#34;: 221,
             &#34;instruction&#34;: &#34;Continue on Platz der Vereinten Nationen. Go for 221 m.&#34;,
             &#34;offset&#34;: 42
           },
           {
             &#34;action&#34;: &#34;turn&#34;,
-            &#34;duration&#34;: 28,
+            &#34;duration&#34;: 29,
             &#34;length&#34;: 123,
             &#34;instruction&#34;: &#34;Turn left onto Platz der Vereinten Nationen toward Mitte. Go for 123 m.&#34;,
             &#34;offset&#34;: 46,
@@ -16598,7 +16015,7 @@ Successfully installed docutils-0.20.1 geohash2-1.1
           },
           {
             &#34;action&#34;: &#34;continue&#34;,
-            &#34;duration&#34;: 3,
+            &#34;duration&#34;: 4,
             &#34;length&#34;: 28,
             &#34;instruction&#34;: &#34;Continue on Mollstra\u00dfe. Go for 28 m.&#34;,
             &#34;offset&#34;: 51
@@ -16612,7 +16029,7 @@ Successfully installed docutils-0.20.1 geohash2-1.1
           }
         ],
         &#34;departure&#34;: {
-          &#34;time&#34;: &#34;2023-06-12T18:17:59+02:00&#34;,
+          &#34;time&#34;: &#34;2023-06-13T12:16:39+02:00&#34;,
           &#34;place&#34;: {
             &#34;type&#34;: &#34;place&#34;,
             &#34;location&#34;: {
@@ -16627,7 +16044,7 @@ Successfully installed docutils-0.20.1 geohash2-1.1
           }
         },
         &#34;arrival&#34;: {
-          &#34;time&#34;: &#34;2023-06-12T18:21:21+02:00&#34;,
+          &#34;time&#34;: &#34;2023-06-13T12:19:49+02:00&#34;,
           &#34;place&#34;: {
             &#34;type&#34;: &#34;place&#34;,
             &#34;location&#34;: {
@@ -16645,6 +16062,9 @@ Successfully installed docutils-0.20.1 geohash2-1.1
         &#34;language&#34;: &#34;en-us&#34;,
         &#34;transport&#34;: {
           &#34;mode&#34;: &#34;car&#34;
+        },
+        &#34;style&#34;: {
+          &#34;lineWidth&#34;: 5
         }
       }
     }
@@ -16658,22 +16078,31 @@ Successfully installed docutils-0.20.1 geohash2-1.1
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><aside class="notes">
+
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Slide 15</p>
 
-     </div>
 </div>
 </div>
 </div>
-
+</div>
+</aside></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="GeoPandas">GeoPandas<a class="anchor-link" href="#GeoPandas">&#182;</a></h2><h3 id="Pandas-and-Numpy-backend--%3E-Fast">Pandas and Numpy backend -&gt; Fast<a class="anchor-link" href="#Pandas-and-Numpy-backend--%3E-Fast">&#182;</a></h3><h3 id="Polygones-to-represent-shaped-areas">Polygones to represent shaped areas<a class="anchor-link" href="#Polygones-to-represent-shaped-areas">&#182;</a></h3><h3 id="Native-functions-like-distances-and-overlapping-included">Native functions like distances and overlapping included<a class="anchor-link" href="#Native-functions-like-distances-and-overlapping-included">&#182;</a></h3>
+</div>
+</div>
+</div>
 </div></section></section>
 </div>
 </div>

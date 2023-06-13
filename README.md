@@ -57,7 +57,9 @@ List of resources and background information (my private favorites are set **bol
 * Python packages
 	* conda install pandas
 	* conda install geopandas
+	* conda install -c conda-forge geohash2
 	* conda install folium
 	* conda install -c conda-forge ipyleaflet
+	* conda install -c conda-forge -c https://repo.platform.here.com/artifactory/api/conda/olp_analytics/analytics_sdk here-platform=2.21.0
 	* conda install -c conda-forge here-map-widget-for-jupyter
 
